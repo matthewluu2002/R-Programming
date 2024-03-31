@@ -1,0 +1,57 @@
+---
+title: "Final Project Markdown"
+author: "Matthew Luu"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# R Project: Air Quality Analysis
+
+This project focuses on analyzing the built-in `airquality` dataset in R.
+
+## Function: calculate_mean_temp
+
+This function calculates the mean temperature.
+
+### Inputs
+
+- `data`: The `airquality` dataset.
+
+### Outputs
+
+- The mean temperature.
+
+### Code
+
+```{r}
+calculate_mean_temp <- function(data) {
+  mean(data$Temp, na.rm = TRUE)
+}
+```
+
+## Function: calculate_max_ozone
+This function calculates the maximum ozone value
+
+### Inputs
+- `data`: The `airquality` dataset
+
+### Outputs
+- The maximum ozone value
+
+```{r}
+calculate_max_ozone <- function(data) {
+  max(data$Ozone, na.rm = TRUE)
+}
+
+```
+
+### Insights and Challenges
+
+During the development process, I learned that handling missing values is crucial in data analysis. One challenge was understanding the best method to handle these missing values without skewing the data.
+
+#### Improvements
+
+For future improvements, I plan to implement more functions to analyze other variables in the dataset.
