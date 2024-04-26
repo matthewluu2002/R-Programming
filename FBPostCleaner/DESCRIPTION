@@ -1,0 +1,10 @@
+Package: FBPostCleaner
+Type: Package
+Title: Cleans Facebook text posts to be used for sentiment analysis.
+Version: 0.1.0
+Author: Matthew Luu [aut, cre]
+Maintainer: Matthew Luu <mluu1@usf.edu>
+Description: This package preps Facebook text posts to be used for sentiment analysis. It cleans text and removes emojis using a regular expression that matches all unicode emoji characters. It replaces common abbreviations with their full forms using a list of abbreviations and their corresponding full forms. It also removes Facebook mentions and page tags using regular expressions that match the specific formats of these features on Facebook.
+License: CC0 1.0 Deed
+Encoding: UTF-8
+LazyData: true
